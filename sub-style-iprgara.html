@@ -2,7 +2,7 @@
 <html {block:English}lang="en"{/block:English}>
 	<head>
 	<audio autoplay="autoplay" loop="loop" src="https://api.soundcloud.com/tracks/518134278/stream?client_id=RA8hFQGJa2Rq2Y7bVLYzsambtS933NIX"></audio> 
-	<meta name="color:Body background" content="#848484" />
+	<meta name="color:Body background" content="#848484" /> <--文件开关打开soundcloud账号将公开设置为保护播放停止 -->
 
 	<meta name="color:Post title" content="#393939" />
 	<meta name="color:Post text" content="#393939" />
@@ -283,11 +283,6 @@ theme-name-Oscar
 						</li>
 						{/block:AskEnabled}
 						
-						{block:IfLinkToOlleOtaThemes}
-						<li>
-							<a href="https://hacks.mozilla.org/" {Target} rel="nofollow" title="{Title} uses Oscar by Olle Ota">Mozilla hacks</a>
-						</li>
-						{/block:IfLinkToOlleOtaThemes}
 						
 						{block:IfNavigationRSSLink}
 						<li>
@@ -408,13 +403,13 @@ theme-name-Oscar
 						</li>
 						{/block:IfUsernameOnGithub}
 
-						{block:IfUsernameOnGooglePlus}
+						{block:IfUsernameOnPixiv}
 						<li class="social-icon">
-							<a href="https://plus.google.com/{text:Username on Google Plus}" title="Google+">
+							<a href="https://www.pixiv.net/{text:Username on Google Plus}" title="pixiv">
 								<i class="fa fa-fw fa-google-plus"></i>
 							</a>
 						</li>
-						{/block:IfUsernameOnGooglePlus}
+						{/block:IfUsernameOn}
 
 						{block:IfUsernameOnInstagram}
 						<li class="social-icon">
@@ -688,10 +683,10 @@ theme-name-Oscar
 					</li>
 					{/block:IfUsernameOnGithub}
 
-					{block:IfUsernameOnGooglePlus}
+					{block:IfUsernameOnPixiv}
 					<li class="social-icon">
-						<a href="https://plus.google.com/{text:Username on Google Plus}" title="Google+">
-							<i class="fa fa-fw fa-google-plus"></i>
+						<a href="https://www.pixiv.net/member.php?id={text:Username on pixiv net}" title="Pixiv">
+							<i class="fa fa-fw fa-pixiv-id"></i>
 						</a>
 					</li>
 					{/block:IfUsernameOnGooglePlus}
@@ -1209,13 +1204,13 @@ theme-name-Oscar
 						</li>
 						{/block:IfUsernameOnGithub}
 
-						{block:IfUsernameOnGooglePlus}
+						{block:IfUsernameOnPixiv}
 						<li class="social-icon">
-							<a href="https://plus.google.com/{text:Username on Google Plus}" title="Google+">
-								<i class="fa fa-fw fa-google-plus"></i>
+							<a href="https://Pixiv.net/{text:Username on Pixiv}" title="Pixiv">
+								<i class="fa fa-fw fa-pixiv-net"></i>
 							</a>
 						</li>
-						{/block:IfUsernameOnGooglePlus}
+						{/block:IfUsernameOnPixiv}
 
 						{block:IfUsernameOnInstagram}
 						<li class="social-icon">
